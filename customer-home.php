@@ -1,5 +1,10 @@
 <?php
 require_once("config.php");
+$image = "https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/292760288_1484678938660654_2384382069817362112_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHVQUu0R3No6_yfuynYM8DaGLrftWIcvr8Yut-1Yhy-v5pUfsrCRrtkHOMJ140FjuN20PbRhsTB2E3HPi7lbSeN&_nc_ohc=0u1IDdd0Zw0AX---6kr&tn=amMYGeUqJjOdRA3y&_nc_zt=23&_nc_ht=scontent.fmnl3-3.fna&oh=00_AT-CV_Ypiz3w6x8X9Bb-MRcAxnhN8uIgU1Xs2ZFQpcA36g&oe=62D102B0";  
+$width = 960;
+$height = 300;
+echo '<a href="'.$image.'"><img src="'.$image.'" style=width:"' . $width . 'px;height:' . $height . 'px;"></a>';
+
 ?>
 <html>
 <head>
@@ -154,24 +159,6 @@ require_once("config.php");
       opacity: 0.111;
     }
     /*////////// LATEST PRODUCT SECTION //////////*/
-
-    $image = "https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/292760288_1484678938660654_2384382069817362112_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHVQUu0R3No6_yfuynYM8DaGLrftWIcvr8Yut-1Yhy-v5pUfsrCRrtkHOMJ140FjuN20PbRhsTB2E3HPi7lbSeN&_nc_ohc=0u1IDdd0Zw0AX---6kr&tn=amMYGeUqJjOdRA3y&_nc_zt=23&_nc_ht=scontent.fmnl3-3.fna&oh=00_AT-CV_Ypiz3w6x8X9Bb-MRcAxnhN8uIgU1Xs2ZFQpcA36g&oe=62D102B0";  
-$width = 960;
-$height = 300;
-echo '<a href="'.$image.'"><img src="'.$image.'" style=width:"' . $width . 'px;height:' . $height . 'px;"></a>';
-
-
-
-
-
-
-
-
-
-
-
-
-
     .latest-products {
       height: 80vh;
       background-color: white;
