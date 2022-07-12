@@ -299,13 +299,13 @@ include("config.php");
 
         </ul>
 
-        <ul class="logout">
+        <ul class="Out">
             <li>
                 <img src="image/ebts_trans.png" style="width:100%;height:50%">
                 <a href="home.php" onclick="return confirm('Are you sure to logout?')">
                     <i class="fa fa-power-off fa-2x"></i>
                     <span class="nav-text">
-                        Logout
+                        Out
                     </span>
                 </a>
             </li>
