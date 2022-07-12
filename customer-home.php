@@ -154,7 +154,8 @@ require_once("config.php");
       opacity: 0.111;
     }
     /*////////// LATEST PRODUCT SECTION //////////*/
-   <p> this is a paragraph </a>
+   <p> this is a paragraph </p>
+  
     .latest-products {
       height: 80vh;
       background-color: white;
