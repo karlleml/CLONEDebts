@@ -374,7 +374,7 @@ include("dbh.php");
         <a href="upload-image.php">
           <i class="fa fa-car-side fa-2x"></i>
           <span class="nav-text">
-            Upload Picture
+            Upload Picture picpic
           </span>
         </a>
       </li>
