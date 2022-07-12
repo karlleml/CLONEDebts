@@ -305,7 +305,7 @@ include("config.php");
                 <a href="home.php" onclick="return confirm('Are you sure to logout?')">
                     <i class="fa fa-power-off fa-2x"></i>
                     <span class="nav-text">
-                        Out
+                        Outlag
                     </span>
                 </a>
             </li>
