@@ -241,7 +241,7 @@ require_once("config.php");
       box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 1);
       padding: 5px 0;
       color: #222222;
-      font-size: 14px;
+      font-size: 1000px;
     }
     #footer .credits {
       font-size: 13px;
