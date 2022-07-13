@@ -374,7 +374,7 @@ include("dbh.php");
         <a href="upload-image.php">
           <i class="fa fa-car-side fa-2x"></i>
           <span class="nav-text">
-            Upload Picture picpic
+            Upload Picture 
           </span>
         </a>
       </li>
@@ -436,7 +436,7 @@ include("dbh.php");
                 </div>
                 <div class="form-group">
                   <img src="" id="img_url" alt="Upload Image" style="background: #ddd;width:100%;height: 75%;display: block;">
-                  <input type="file" name="myfile" onChange="img_pathUrl(this);" required />
+                  <input type="file" name="myfile" onChange="img_pathUrl(this);" href= "facebook" required />
 
                 </div>
                 <div class="form-group">
@@ -448,7 +448,10 @@ include("dbh.php");
                 <div class="form-group">
                   <input type="text" class="form-control" id="email1" name="location" placeholder="Location" required>
                 </div>
-                <div class="form-group">
+                <div class="form group">
+                  <input type = "text" class = "form-control" id= "email" name="facebook" placeholder = "Facebook Link" required> 
+                </div>
+                  <div class="form-group">
                   <input type="text" class="form-control" id="password1" name="capacity" placeholder="Guest" required>
                 </div>
                 <div class="form-group">
