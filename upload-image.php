@@ -437,8 +437,7 @@ include("dbh.php");
                 <div class="form-group">
                   <img src="" id="img_url" alt="Upload Image" style="background: #ddd;width:100%;height: 75%;display: block;">
                   <input type="file" name="myfile" onChange="img_pathUrl(this);" required />
-                  <a href = "fblink" >
-
+                  <a href = "https://www.facebook.com/eBoardinghouseTransientStaycation" title= "photo">
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="email1" name="house" style='color:#38231d;' placeholder="House Name" required>
