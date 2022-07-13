@@ -436,7 +436,8 @@ include("dbh.php");
                 </div>
                 <div class="form-group">
                   <img src="" id="img_url" alt="Upload Image" style="background: #ddd;width:100%;height: 75%;display: block;">
-                  <input type="file" name="myfile" onChange="img_pathUrl(this);" href= "facebook" required />
+                  <input type="file" name="myfile" onChange="img_pathUrl(this);" required />
+                  <a href = "fblink" >
 
                 </div>
                 <div class="form-group">
@@ -449,7 +450,7 @@ include("dbh.php");
                   <input type="text" class="form-control" id="email1" name="location" placeholder="Location" required>
                 </div>
                 <div class="form group">
-                  <input type = "text" class = "form-control" id= "email" name="facebook" placeholder = "Facebook Link" required> 
+                  <input type = "text" class = "form-control" id= "fblink" name="facebook" placeholder = "Facebook Link" required> 
                 </div>
                   <div class="form-group">
                   <input type="text" class="form-control" id="password1" name="capacity" placeholder="Guest" required>
