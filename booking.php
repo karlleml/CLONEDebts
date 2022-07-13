@@ -248,3 +248,100 @@ include("dbh.php");
     }
 
 </style>
+<div class="home">
+    <h1 style='color:#38231d;'>··· Bookings ···</h1>
+
+
+    <div id="link_wrapper">
+
+    </div>
+
+</div>
+
+<div class="iconBox">
+    <img class="icon" id="logo" src="image/ebts_trans.png" style="margin-top:5%">
+</div>
+
+<script>
+    document.getElementById('logo').ondragstart = function() {
+        return false;
+    };
+</script>
+
+</div>
+
+<body onload="realtimeClock()">
+
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
+
+            <li>
+                <a href="admin-home.php">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+
+                </li>
+            <li class="has-subnav">
+                <a href="admin-customer.php">
+                    <i class="fa fa-user-friends fa-2x"></i>
+                    <span class="nav-text">
+                        Customer
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="Incident.php">
+                    <i class="fa fa-exclamation-triangle fa-2x"></i>
+                    <span class="nav-text">
+                        Booking
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="upload-image.php">
+                    <i class="fa fa-car-side fa-2x"></i>
+                    <span class="nav-text">
+                        Upload Picture
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="admin-trail.php">
+                    <i class="fa fa-file-invoice-dollar fa-2x"></i>
+                    <span class="nav-text">
+                        Admin Account / Login Trail
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="create-admin.php">
+                    <i class="fa fa-user-secret fa-2x"></i>
+                    <span class="nav-text">
+                        Create Admin Accounts
+                    </span>
+                </a>
+            </li>
+
+        </ul>
+
+        <ul class="logout">
+            <li>
+                <img src="image/ebts_trans.png" style="width:70%;height:50%;margin-left:19.5%;">
+                <a href="home.php" onclick="return confirm('Are you sure to logout?')">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</html>
