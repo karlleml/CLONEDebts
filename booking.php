@@ -341,4 +341,104 @@ include("config.php");
     </nav>
 
 
+
+
+
+
+
+ <section style="position:absolute;margin-left:20%;margin-top:5%;">
+        <div class="topnav">
+            <div class="search-container" style="margin-left:60%;margin-top:2%;">
+                <form action="" method=POST>
+                    <p style="visibility:hidden">ID Search</p>
+                    <input type="text" placeholder="Search Here..." name="search">
+                    <button type="submit" name="seee" style='background-color:#38231d;color:white;width:15%;font-family: Orelega One cursive;'>Search</button>
+                    <a href="admin-trail.php"><button style='background-color:#38231d;color:white;width:15%;font-family: Orelega One cursive;'>View All</button></a>
+                </form>
+            </div>
+        </div>
+        
+        <?php
+        if (isset($_POST['seee'])) {
+            $search = $_POST['search'];
+            $sql1 = "SELECT * FROM tb2_customer  where fullname  regexp '(^|[[:space:]])$search([[:space:]]|$)'";
+            $result1 = $conn->query($sql1);
+            if ($result1 == TRUE) {
+                echo "<html>";
+                echo "<body>";
+                echo "<center>";
+                echo "<div style='height:700px;  width:1250px; overflow:auto; overflow-x: hidden;'><table id=customers border-collapse: collapse;
+cellspacing=0 cellpadding=0; >";
+                echo "<tr>";
+                echo "<th>HOUSE";
+                echo "<th>FULL NAME";
+                echo "<th>CHECK IN";
+                echo "<th>CHECK OUT";
+                echo "<th>REFERENCE";
+                while ($row = $result1->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td>" . $row['house'];
+                    echo "<td>" . $row['fullname'];
+                    echo "<td>" . $row['check_in'];
+                    echo "<td>" . $row['check_out'];
+                    echo "<td>" . $row['reference'];
+                }
+            } else {
+                $sql2 = "SELECT * FROM tb2_customer";
+                $result2 = $conn->query($sql2);
+                if ($result2 == TRUE) {
+                    echo "<html>";
+                    echo "<body>";
+                    echo "<center>";
+                    echo "<div style='height:700px;  width:1250px; overflow:auto;'><table id=customers border-collapse: collapse;
+cellspacing=0 cellpadding=0; >";
+                    echo "<tr>";
+                    echo "<th>HOUSE";
+                    echo "<th>FULL NAME";
+                    echo "<th>CHECK IN";
+                    echo "<th>CHECK OUT";
+                    echo "<th>REFERENCE";
+                    while ($row = $result2->fetch_assoc()) {
+                        echo "<tr>";
+                        echo "<td>" . $row['house'];
+                        echo "<td>" . $row['fullname'];
+                        echo "<td>" . $row['check_in'];
+                        echo "<td>" . $row['check_out'];
+                        echo "<td>" . $row['reference'];
+                    }
+                }
+            }
+        } else {
+            $sql2 = "SELECT * FROM tb2_customer";
+            $result2 = $conn->query($sql2);
+            if ($result2 == TRUE) {
+                echo "<html>";
+                echo "<body>";
+                echo "<center>";
+                echo "<div style='height:700px; width:1250px; overflow:auto; overflow-x: hidden;'><table id=customers border-collapse: collapse;
+cellspacing=0 cellpadding=0;>";
+                echo "<tr>";
+                echo "<th>HOUSE";
+                echo "<th>FULL NAME";
+                echo "<th>CHECK IN";
+                echo "<th>CHECK OUT";
+                echo "<th>REFERENCE";
+                while ($row = $result2->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td>" . $row['house'];
+                    echo "<td>" . $row['fullname'];
+                    echo "<td>" . $row['check_in'];
+                    echo "<td>" . $row['check_out'];
+                    echo "<td>" . $row['reference'];
+                }
+            }
+        }
+
+
+        ?>
+    </section>
+
+    
+
+
 </html>

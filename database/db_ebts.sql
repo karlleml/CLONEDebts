@@ -174,3 +174,14 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE `tb2_customer` (
+  `id` int(11) NOT NULL,
+  `house` varchar(500) NOT NULL,
+  `fullname` varchar(500) NOT NULL,
+  `check_in` date NOT NULL,
+  `check_out` date NOT NULL,
+  `email` varchar(500) NOT NULL,
+  `username` varchar(500) NOT NULL,
+  `password` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
