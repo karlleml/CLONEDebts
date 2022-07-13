@@ -91,7 +91,6 @@ require_once("config.php");
             grid-gap: 9.1em;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
-
         .quote {
             padding: 1em;
             background-color: #c1c8c9;

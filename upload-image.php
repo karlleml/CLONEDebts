@@ -442,13 +442,13 @@ include("dbh.php");
                   <input type="text" class="form-control" id="email1" name="house" style='color:#38231d;' placeholder="House Name" required>
                 </div>
                 <div class="form-group">
+                  <input type="url" class="form-control" id="fblink" name="fb" style='color:#38231d;' placeholder="Facebook Link" required>
+                </div>
+                <div class="form-group">
                   <input type="text" class="form-control" id="password1" name="price" placeholder="Rate" required>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="email1" name="location" placeholder="Location" required>
-                </div>
-                <div class="form group">
-                  <input type = "text" class = "form-control" id= "fblink" name="facebook" placeholder = "Facebook Link" required> 
                 </div>
                   <div class="form-group">
                   <input type="text" class="form-control" id="password1" name="capacity" placeholder="Guest" required>
