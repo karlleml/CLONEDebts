@@ -125,7 +125,6 @@ INSERT INTO `tbl_picture` (`id`, `name`, `mime`, `data`, `location`, `price`, `c
 --
 -- Table structure for table `tbl_trail`
 --
-
 CREATE TABLE `tbl_trail` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -186,3 +185,4 @@ CREATE TABLE `tb2_customer` (
   `password` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 INSERT INTO `tb2_customer` (`id`, `house`, `fullname`, `check_in`, `check_out`, `email`, `username`, `password`) VALUES
+
