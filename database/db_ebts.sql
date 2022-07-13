@@ -185,3 +185,4 @@ CREATE TABLE `tb2_customer` (
   `username` varchar(500) NOT NULL,
   `password` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO `tb2_customer` (`id`, `house`, `fullname`, `check_in`, `check_out`, `email`, `username`, `password`) VALUES
