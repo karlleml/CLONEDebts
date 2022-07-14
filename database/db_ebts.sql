@@ -146,6 +146,7 @@ INSERT INTO `tbl_trail` (`id`, `name`, `date`) VALUES
 (8, 'Arthur Paul Hernandez', '2022-05-31 10:24:47'),
 (9, 'Jomalee Cuevas Santos', '2022-05-31 10:26:48'),
 (10, 'Khirk G. Mendoza', '2022-06-03 13:12:03');
+(11, 'Testname', '2022-06-03 13:12:03');
 
 --
 -- Indexes for dumped tables
